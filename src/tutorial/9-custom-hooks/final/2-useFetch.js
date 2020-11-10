@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback } from "react";
 
 export const useFetch = (url) => {
   const [loading, setLoading] = useState(true);
@@ -14,5 +14,6 @@ export const useFetch = (url) => {
   useEffect(() => {
     getProducts();
   }, [url, getProducts]);
+
   return { loading, products };
 };
